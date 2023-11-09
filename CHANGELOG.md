@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file.
 `Starscream` adheres to [Semantic Versioning](http://semver.org/).
 
+### [4.0.7](https://github.com/nauphone/NStarscream/tree/4.0.7)
+
+Bug fixes for 4.0.7
+
+[#772](https://github.com/daltoniam/Starscream/pull/772)
+
 ### [4.0.4](https://github.com/daltoniam/Starscream/tree/4.0.4)
 
 Bug fixes for 4.0.3.

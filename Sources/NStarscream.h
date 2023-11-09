@@ -22,10 +22,10 @@
 
 #import <Foundation/Foundation.h>
 
-//! Project version number for Starscream.
-FOUNDATION_EXPORT double StarscreamVersionNumber;
+//! Project version number for NStarscream.
+FOUNDATION_EXPORT double NStarscreamVersionNumber;
 
-//! Project version string for Starscream.
-FOUNDATION_EXPORT const unsigned char StarscreamVersionString[];
+//! Project version string for NStarscream.
+FOUNDATION_EXPORT const unsigned char NStarscreamVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <Starscream/PublicHeader.h>
+// In this header, you should import all the public headers of your framework using statements like #import <NStarscream/PublicHeader.h>

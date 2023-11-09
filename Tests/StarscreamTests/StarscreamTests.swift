@@ -22,7 +22,7 @@
 
 import XCTest
 
-class StarscreamTests: XCTestCase {
+class NStarscreamTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

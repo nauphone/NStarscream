@@ -84,7 +84,7 @@ public protocol Framer {
 }
 
 public class WSFramer: Framer {
-    private let queue = DispatchQueue(label: "com.vluxe.starscream.wsframer", attributes: [])
+    private let queue = DispatchQueue(label: "com.naumen.nstarscream.wsframer", attributes: [])
     private weak var delegate: FramerEventClient?
     private var buffer = Data()
     public var compressionEnabled = false

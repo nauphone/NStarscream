@@ -35,7 +35,7 @@ FrameCollectorDelegate, HTTPHandlerDelegate {
     private let frameHandler = FrameCollector()
     private var didUpgrade = false
     private var secKeyValue = ""
-    private let writeQueue = DispatchQueue(label: "com.vluxe.starscream.writequeue")
+    private let writeQueue = DispatchQueue(label: "com.naumen.nstarscream.writequeue")
     private let mutex = DispatchSemaphore(value: 1)
     private var canSend = false
     private var isConnecting = false
@@ -143,8 +143,10 @@ FrameCollectorDelegate, HTTPHandlerDelegate {
             let wsReq = HTTPWSHeader.createUpgrade(request: request, supportsCompression: framer.supportsCompression(), secKeyValue: secKeyValue)
             let data = httpHandler.convert(request: wsReq)
             transport.write(data: data, completion: {_ in })
-        case .waiting:
-            break
+        case .waiting(let error):
+            if let error = error {
+                handleError(error)
+            }
         case .failed(let error):
             handleError(error)
         case .viability(let isViable):

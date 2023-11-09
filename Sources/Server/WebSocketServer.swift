@@ -31,8 +31,8 @@ public class WebSocketServer: Server, ConnectionDelegate {
     public var onEvent: ((ServerEvent) -> Void)?
     private var connections = [String: ServerConnection]()
     private var listener: NWListener?
-    private let queue = DispatchQueue(label: "com.vluxe.starscream.server.networkstream", attributes: [])
-    
+    private let queue = DispatchQueue(label: "com.naumen.nstarscream.server.networkstream", attributes: [])
+
     public init() {
         
     }

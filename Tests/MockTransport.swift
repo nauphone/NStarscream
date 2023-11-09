@@ -21,7 +21,7 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
 import Foundation
-@testable import Starscream
+@testable import NStarscream
 
 public class MockTransport: Transport {
     

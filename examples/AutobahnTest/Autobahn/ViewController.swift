@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Starscream
+import NStarscream
 
 class ViewController: UIViewController {
     

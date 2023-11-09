@@ -21,7 +21,7 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
 import UIKit
-import Starscream
+import NStarscream
 
 class ViewController: UIViewController, WebSocketDelegate {
     var socket: WebSocket!
@@ -39,7 +39,7 @@ class ViewController: UIViewController, WebSocketDelegate {
     }
     
     // MARK: - WebSocketDelegate
-    func didReceive(event: Starscream.WebSocketEvent, client: Starscream.WebSocketClient) {
+    func didReceive(event: NStarscream.WebSocketEvent, client: NStarscream.WebSocketClient) {
         switch event {
         case .connected(let headers):
             isConnected = true
